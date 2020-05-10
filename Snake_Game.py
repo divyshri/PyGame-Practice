@@ -99,13 +99,13 @@ def main_gameLoop():
                     change_pixels_of_x = -blockSize
                     change_pixels_of_y = noPixel
                 elif event.key == pygame.K_RIGHT or event.key == pygame.K_d:		#Right Key or 'd'
-                    change_pixels_of_x = blockSize
+                    change_pixels_of_x = +blockSize
                     change_pixels_of_y = noPixel
                 elif event.key == pygame.K_UP or event.key == pygame.K_w:			#Up key or 'w'
                     change_pixels_of_y = -blockSize
                     change_pixels_of_x = noPixel
-                elif vent.key == pygame.K_DOWN or event.key == pygame.K_s:			#down Key or 's'
-                    change_pixels_of_y = blockSize
+                elif event.key == pygame.K_DOWN or event.key == pygame.K_s:			#down Key or 's'
+                    change_pixels_of_y = +blockSize
                     change_pixels_of_x = noPixel
 
         #Boudry Collision Check
